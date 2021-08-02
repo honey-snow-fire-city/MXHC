@@ -39,6 +39,7 @@ public class FileController {
 
     @RequestMapping("/addFile")
     public String AddFile(@RequestParam("file") CommonsMultipartFile file, HttpServletRequest request,Model model){
+        System.out.println("你好");
         // 以当前日期创建一个文件夹，避免单个文件夹中文件过多
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
